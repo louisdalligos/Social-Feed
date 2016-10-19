@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		530E082B7B13ED792A52192B /* Pods_Social_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D34F66AD375C5C9DF932B83 /* Pods_Social_Feed.framework */; };
+		BF01E1BF1DB704D0001E46B1 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */; };
+		BF01E1C11DB704EE001E46B1 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */; };
 		BFE0B7641DB6E11B00D9F2B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */; };
-		BFE0B7661DB6E11B00D9F2B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7651DB6E11B00D9F2B9 /* ViewController.swift */; };
+		BFE0B7661DB6E11B00D9F2B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */; };
 		BFE0B7691DB6E11B00D9F2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B7671DB6E11B00D9F2B9 /* Main.storyboard */; };
 		BFE0B76B1DB6E11B00D9F2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B76A1DB6E11B00D9F2B9 /* Assets.xcassets */; };
 		BFE0B76E1DB6E11B00D9F2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B76C1DB6E11B00D9F2B9 /* LaunchScreen.storyboard */; };
@@ -20,9 +22,11 @@
 		2D34F66AD375C5C9DF932B83 /* Pods_Social_Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E8BCF1B315C6057FAA9D4C /* Pods-Social Feed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Feed/Pods-Social Feed.release.xcconfig"; sourceTree = "<group>"; };
 		66BACC02F25C62D072DD2289 /* Pods-Social Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Feed/Pods-Social Feed.debug.xcconfig"; sourceTree = "<group>"; };
+		BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
+		BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
 		BFE0B7601DB6E11B00D9F2B9 /* Social Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFE0B7651DB6E11B00D9F2B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		BFE0B7681DB6E11B00D9F2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE0B76A1DB6E11B00D9F2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE0B76D1DB6E11B00D9F2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +54,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF01E1B91DB6EA41001E46B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF01E1BA1DB6ED89001E46B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF01E1C21DB7093A001E46B1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */,
+				BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		BFE0B7571DB6E11B00D9F2B9 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +99,10 @@
 		BFE0B7621DB6E11B00D9F2B9 /* Social Feed */ = {
 			isa = PBXGroup;
 			children = (
+				BF01E1BA1DB6ED89001E46B1 /* View */,
+				BF01E1B91DB6EA41001E46B1 /* Controller */,
+				BF01E1C21DB7093A001E46B1 /* Resource */,
 				BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */,
-				BFE0B7651DB6E11B00D9F2B9 /* ViewController.swift */,
 				BFE0B7671DB6E11B00D9F2B9 /* Main.storyboard */,
 				BFE0B76A1DB6E11B00D9F2B9 /* Assets.xcassets */,
 				BFE0B76C1DB6E11B00D9F2B9 /* LaunchScreen.storyboard */,
@@ -158,6 +188,8 @@
 				BFE0B7761DB6E3C800D9F2B9 /* GoogleService-Info.plist in Resources */,
 				BFE0B76B1DB6E11B00D9F2B9 /* Assets.xcassets in Resources */,
 				BFE0B7691DB6E11B00D9F2B9 /* Main.storyboard in Resources */,
+				BF01E1BF1DB704D0001E46B1 /* Nexa Light.otf in Resources */,
+				BF01E1C11DB704EE001E46B1 /* Nexa Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE0B7661DB6E11B00D9F2B9 /* ViewController.swift in Sources */,
+				BFE0B7661DB6E11B00D9F2B9 /* SignUpVC.swift in Sources */,
 				BFE0B7641DB6E11B00D9F2B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
