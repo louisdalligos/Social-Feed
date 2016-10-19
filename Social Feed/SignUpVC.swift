@@ -13,6 +13,9 @@ import FBSDKLoginKit
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var emailField: LeftPaddedTextField!
+    @IBOutlet weak var passwordField: LeftPaddedTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,5 +57,29 @@ class SignUpVC: UIViewController {
         
     }
 
+    @IBAction func loginBtnTapped(_ sender: AnyObject) {
+        
+        if let email = emailField.text, let pwd = passwordField.text {
+            
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                
+                // error handling
+                if error == nil {
+                    print("LOUIS: Email user authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion:  { (user, error) in
+                        if error != nil {
+                            print("LOUIS: Unable to authenticate with Firebase using email -\(error)")
+                        } else {
+                            print("LOUIS: Successfully authenticated with Firebase")
+                        }
+                    
+                    })
+                }
+            
+            })
+            
+        }
+    }
 }
 
