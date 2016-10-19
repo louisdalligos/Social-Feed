@@ -20,7 +20,17 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set the status bar to light
+        UIApplication.shared.statusBarStyle = .lightContent
         
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // set status bar style to default
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
         
     }
 
