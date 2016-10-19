@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SwiftKeychainWrapper
 
 class SignUpVC: UIViewController {
 
@@ -23,6 +24,13 @@ class SignUpVC: UIViewController {
         
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if let _ = KeychainWrapper.standard.string(forKey: "KEY_UID") {
+            print("LOUIS: ID found in Keychain")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
 
     @IBAction func loginFBButtonTapped(_ sender: AnyObject) {
         
@@ -66,12 +74,18 @@ class SignUpVC: UIViewController {
                 // error handling
                 if error == nil {
                     print("LOUIS: Email user authenticated with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion:  { (user, error) in
                         if error != nil {
                             print("LOUIS: Unable to authenticate with Firebase using email -\(error)")
                         } else {
                             print("LOUIS: Successfully authenticated with Firebase")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }
                     
                     })
@@ -80,6 +94,12 @@ class SignUpVC: UIViewController {
             })
             
         }
+    }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: "KEY_UID")
+        print("LOUIS: Data saved to keychain - \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 }
 

@@ -12,6 +12,7 @@
 		BF01E1C11DB704EE001E46B1 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */; };
 		BFC180EA1DB7545A00EF98B1 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180E91DB7545A00EF98B1 /* LeftPaddedTextField.swift */; };
 		BFC180EC1DB75E8C00EF98B1 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180EB1DB75E8C00EF98B1 /* RoundBtn.swift */; };
+		BFC180EE1DB760ED00EF98B1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180ED1DB760ED00EF98B1 /* FeedVC.swift */; };
 		BFE0B7641DB6E11B00D9F2B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */; };
 		BFE0B7661DB6E11B00D9F2B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */; };
 		BFE0B7691DB6E11B00D9F2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B7671DB6E11B00D9F2B9 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Feed.entitlements"; sourceTree = "<group>"; };
 		BFC180E91DB7545A00EF98B1 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
 		BFC180EB1DB75E8C00EF98B1 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		BFC180ED1DB760ED00EF98B1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		BFE0B7601DB6E11B00D9F2B9 /* Social Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */,
+				BFC180ED1DB760ED00EF98B1 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				BFE0B7661DB6E11B00D9F2B9 /* SignUpVC.swift in Sources */,
 				BFC180EC1DB75E8C00EF98B1 /* RoundBtn.swift in Sources */,
+				BFC180EE1DB760ED00EF98B1 /* FeedVC.swift in Sources */,
 				BFE0B7641DB6E11B00D9F2B9 /* AppDelegate.swift in Sources */,
 				BFC180EA1DB7545A00EF98B1 /* LeftPaddedTextField.swift in Sources */,
 			);
