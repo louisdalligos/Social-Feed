@@ -24,6 +24,7 @@
 		66BACC02F25C62D072DD2289 /* Pods-Social Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Feed/Pods-Social Feed.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
+		BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Feed.entitlements"; sourceTree = "<group>"; };
 		BFE0B7601DB6E11B00D9F2B9 /* Social Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE0B7651DB6E11B00D9F2B9 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		BFE0B7621DB6E11B00D9F2B9 /* Social Feed */ = {
 			isa = PBXGroup;
 			children = (
+				BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */,
 				BF01E1BA1DB6ED89001E46B1 /* View */,
 				BF01E1B91DB6EA41001E46B1 /* Controller */,
 				BF01E1C21DB7093A001E46B1 /* Resource */,
@@ -158,6 +160,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4WV9HZC5SY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -373,6 +380,7 @@
 			baseConfigurationReference = 66BACC02F25C62D072DD2289 /* Pods-Social Feed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Social Feed/Social Feed.entitlements";
 				DEVELOPMENT_TEAM = 4WV9HZC5SY;
 				INFOPLIST_FILE = "Social Feed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +395,7 @@
 			baseConfigurationReference = 58E8BCF1B315C6057FAA9D4C /* Pods-Social Feed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Social Feed/Social Feed.entitlements";
 				DEVELOPMENT_TEAM = 4WV9HZC5SY;
 				INFOPLIST_FILE = "Social Feed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

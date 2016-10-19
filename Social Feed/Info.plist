@@ -46,5 +46,27 @@
 		<string>Nexa Light.otf</string>
 		<string>Nexa Bold.otf</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb628795183964981</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>628795183964981</string>
+    <key>FacebookDisplayName</key>
+    <string>Social Feed</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>{human-readable reason for photo access}</string>
 </dict>
 </plist>
