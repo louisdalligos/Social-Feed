@@ -36,7 +36,7 @@ class SignUpVC: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         
-        if let _ = KeychainWrapper.standard.string(forKey: "KEY_UID") {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             print("LOUIS: ID found in Keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
@@ -70,6 +70,9 @@ class SignUpVC: UIViewController {
                 print("LOUIS: Unable to authenticate with Firebase - \(error)")
             } else {
                 print("LOUIS: Successfully authenticated with Firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
         
@@ -107,7 +110,7 @@ class SignUpVC: UIViewController {
     }
     
     func completeSignIn(id: String) {
-        let keychainResult = KeychainWrapper.standard.set(id, forKey: "KEY_UID")
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("LOUIS: Data saved to keychain - \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }

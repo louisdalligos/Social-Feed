@@ -10,6 +10,7 @@
 		530E082B7B13ED792A52192B /* Pods_Social_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D34F66AD375C5C9DF932B83 /* Pods_Social_Feed.framework */; };
 		BF01E1BF1DB704D0001E46B1 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */; };
 		BF01E1C11DB704EE001E46B1 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */; };
+		BF97CB7C1DB867F0003F5041 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF97CB7B1DB867F0003F5041 /* Constant.swift */; };
 		BFC180EA1DB7545A00EF98B1 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180E91DB7545A00EF98B1 /* LeftPaddedTextField.swift */; };
 		BFC180EC1DB75E8C00EF98B1 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180EB1DB75E8C00EF98B1 /* RoundBtn.swift */; };
 		BFC180EE1DB760ED00EF98B1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC180ED1DB760ED00EF98B1 /* FeedVC.swift */; };
@@ -28,6 +29,7 @@
 		BF01E1BE1DB704D0001E46B1 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		BF01E1C01DB704EE001E46B1 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
 		BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Feed.entitlements"; sourceTree = "<group>"; };
+		BF97CB7B1DB867F0003F5041 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BFC180E91DB7545A00EF98B1 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
 		BFC180EB1DB75E8C00EF98B1 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		BFC180ED1DB760ED00EF98B1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		BF97CB7A1DB86791003F5041 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BF97CB7B1DB867F0003F5041 /* Constant.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		BFE0B7571DB6E11B00D9F2B9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		BFE0B7621DB6E11B00D9F2B9 /* Social Feed */ = {
 			isa = PBXGroup;
 			children = (
+				BF97CB7A1DB86791003F5041 /* Util */,
 				BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */,
 				BF01E1BA1DB6ED89001E46B1 /* View */,
 				BF01E1B91DB6EA41001E46B1 /* Controller */,
@@ -269,6 +280,7 @@
 				BFC180EE1DB760ED00EF98B1 /* FeedVC.swift in Sources */,
 				BFE0B7641DB6E11B00D9F2B9 /* AppDelegate.swift in Sources */,
 				BFC180EA1DB7545A00EF98B1 /* LeftPaddedTextField.swift in Sources */,
+				BF97CB7C1DB867F0003F5041 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

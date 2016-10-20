@@ -13,6 +13,7 @@ class LeftPaddedTextField: UITextField {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        layer.borderColor = UIColor(red: SHADOW_GRAY, green: SHADOW_GRAY, blue: SHADOW_GRAY, alpha: 0.2).cgColor
         layer.borderWidth = 0
         layer.cornerRadius = 4.0
     }
