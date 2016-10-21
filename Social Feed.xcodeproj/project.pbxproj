@@ -23,6 +23,7 @@
 		BFE0B76B1DB6E11B00D9F2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B76A1DB6E11B00D9F2B9 /* Assets.xcassets */; };
 		BFE0B76E1DB6E11B00D9F2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B76C1DB6E11B00D9F2B9 /* LaunchScreen.storyboard */; };
 		BFE0B7761DB6E3C800D9F2B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B7751DB6E3C800D9F2B9 /* GoogleService-Info.plist */; };
+		BFE4F8471DB9C6DB008668FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4F8461DB9C6DB008668FC /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BFE0B76D1DB6E11B00D9F2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE0B76F1DB6E11B00D9F2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE0B7751DB6E3C800D9F2B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFE4F8461DB9C6DB008668FC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		BFE0B7621DB6E11B00D9F2B9 /* Social Feed */ = {
 			isa = PBXGroup;
 			children = (
+				BFE4F8431DB9C6AC008668FC /* Data Services */,
 				BF97CB7A1DB86791003F5041 /* Util */,
 				BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */,
 				BF01E1BA1DB6ED89001E46B1 /* View */,
@@ -141,6 +144,14 @@
 				BFE0B7751DB6E3C800D9F2B9 /* GoogleService-Info.plist */,
 			);
 			path = "Social Feed";
+			sourceTree = "<group>";
+		};
+		BFE4F8431DB9C6AC008668FC /* Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4F8461DB9C6DB008668FC /* DataService.swift */,
+			);
+			name = "Data Services";
 			sourceTree = "<group>";
 		};
 		C5AEB35F0525BBA03EDC7053 /* Pods */ = {
@@ -293,6 +304,7 @@
 				BF80AAF51DB98854001530D8 /* CircleView.swift in Sources */,
 				BF97CB7C1DB867F0003F5041 /* Constant.swift in Sources */,
 				BF80AAF71DB9A026001530D8 /* PostCell.swift in Sources */,
+				BFE4F8471DB9C6DB008668FC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
