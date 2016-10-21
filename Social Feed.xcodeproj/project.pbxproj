@@ -24,6 +24,7 @@
 		BFE0B76E1DB6E11B00D9F2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B76C1DB6E11B00D9F2B9 /* LaunchScreen.storyboard */; };
 		BFE0B7761DB6E3C800D9F2B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFE0B7751DB6E3C800D9F2B9 /* GoogleService-Info.plist */; };
 		BFE4F8471DB9C6DB008668FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4F8461DB9C6DB008668FC /* DataService.swift */; };
+		BFE4F84A1DBA447B008668FC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4F8491DBA447B008668FC /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		BFE0B76F1DB6E11B00D9F2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE0B7751DB6E3C800D9F2B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFE4F8461DB9C6DB008668FC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BFE4F8491DBA447B008668FC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +132,12 @@
 		BFE0B7621DB6E11B00D9F2B9 /* Social Feed */ = {
 			isa = PBXGroup;
 			children = (
-				BFE4F8431DB9C6AC008668FC /* Data Services */,
-				BF97CB7A1DB86791003F5041 /* Util */,
 				BF01E1C31DB72500001E46B1 /* Social Feed.entitlements */,
+				BFE4F8481DBA441D008668FC /* Model */,
 				BF01E1BA1DB6ED89001E46B1 /* View */,
 				BF01E1B91DB6EA41001E46B1 /* Controller */,
+				BFE4F8431DB9C6AC008668FC /* Data Services */,
+				BF97CB7A1DB86791003F5041 /* Util */,
 				BF01E1C21DB7093A001E46B1 /* Resource */,
 				BFE0B7631DB6E11B00D9F2B9 /* AppDelegate.swift */,
 				BFE0B7671DB6E11B00D9F2B9 /* Main.storyboard */,
@@ -152,6 +155,14 @@
 				BFE4F8461DB9C6DB008668FC /* DataService.swift */,
 			);
 			name = "Data Services";
+			sourceTree = "<group>";
+		};
+		BFE4F8481DBA441D008668FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4F8491DBA447B008668FC /* Post.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C5AEB35F0525BBA03EDC7053 /* Pods */ = {
@@ -296,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE0B7661DB6E11B00D9F2B9 /* SignUpVC.swift in Sources */,
+				BFE4F84A1DBA447B008668FC /* Post.swift in Sources */,
 				BFC180EC1DB75E8C00EF98B1 /* RoundBtn.swift in Sources */,
 				BFC180EE1DB760ED00EF98B1 /* FeedVC.swift in Sources */,
 				BF80AAF91DB9A5D6001530D8 /* PostDesign.swift in Sources */,
