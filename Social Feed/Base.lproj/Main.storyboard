@@ -174,11 +174,15 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tQ2-Xo-q07">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Mz-fBZ">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Mz-fBZ">
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="5JN-5P-OCP"/>
                                                     <constraint firstAttribute="width" constant="32" id="7hM-El-YcK"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8WP-7s-3ZN" appends="YES" id="zfd-nN-nhk"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-mN-TbY">
                                                 <constraints>
@@ -317,11 +321,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="cvO-Mz-fBZ" id="r41-PE-dqZ"/>
                         <outlet property="tableView" destination="TXy-qR-ZXL" id="jPt-7d-SCd"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignUp" id="r9d-4V-SJY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdE-wY-5Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8WP-7s-3ZN">
+                    <connections>
+                        <action selector="addImageTapped:" destination="KJp-yz-Bh8" id="V6B-6p-mXy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="960" y="120.4225352112676"/>
         </scene>

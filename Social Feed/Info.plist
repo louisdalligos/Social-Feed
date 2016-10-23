@@ -67,7 +67,7 @@
 		<string>fbshareextension</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>{human-readable reason for photo access}</string>
+	<string>Access to your photo required to post on the application</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>
